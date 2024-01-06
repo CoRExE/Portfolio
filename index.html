@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/style_main.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="project.html">Projets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <p>Voici la description des Compétences et les Projets</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Ce portfolio illustre actuellement la progression des divers projets du BUT Informatique de la première année,
+        ainsi que divers projets personnels.
+      </p>
+      <a href="https://github.com/CoRExE"> Mon Github</a>
+      <br>
+      <a href="https://gitlab.univ-artois.fr/jules_langagne">Mon GitLab</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Mes projets</h2>
+      <div class="project-item">
+        <img src="assets/cadenaIcon.ico" alt="Projet 1">
+        <h3>Interface de Cryptage</h3>
+        <p>Interface Tkinter réalisée pour crypter rapidement du texte</p>
+      </div>
+      <div class="project-item">
+        <img src="assets/Logo_Juste_Prix.jpg" alt="Projet 2">
+        <h3>Juste Prix</h3>
+        <p>Petit projet de découverte de JavaFX</p>
+      </div>
+      <div class="project-item">
+        <img src="assets/Livraiso.png" alt="Projet 3">
+        <h3>LivraisO</h3>
+        <p>Application Java réalisé en Examen pour la gestion des données
+          d'une entreprise spécialisé dans la livraison de bouteille d'eau</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo-iut.png" alt="Logo IUT de Lens">
+      </div>
+      <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Utilisation des cookies</h2>
+      <p>Notre site utilise des cookies pour améliorer votre expérience de navigation. Nous ne prélevons aucune
+        information sensible sans votre consentement. En continuant à naviguer sur notre site, vous acceptez
+        l'utilisation des cookies.</p>
+      <button id="btn-accept">Accepter</button>
+      <button id="btn-refuse">Refuser</button>
+    </div>
+  </div>
+  <script src="scripts/script_cookies.js"></script>
+</body>
+
+</html>

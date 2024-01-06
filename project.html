@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projets</title>
+  <link rel="stylesheet" type="text/css" href="styles/style_project.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="project.html">Projets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Projet BUT -->
+    <section id="projet-but" class="projet-zone" onmouseover="hideProjet('projet-personnel')"
+      onmouseout="showProjet('projet-personnel')">
+      <h1 style="color: black; background-color: white; font-size: 30px;">Projet BUT</h1>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Projet Personnel -->
+    <section id="projet-personnel" class="projet-zone" onmouseover="hideProjet('projet-but')"
+      onmouseout="showProjet('projet-but')">
+      <h1 style="color: white; background-color: black; font-size: 30px;">Projet Personnel</h1>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo-iut.png" alt="Logo IUT de Lens">
+      </div>
+      <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fonction pour masquer une section
+    function hideProjet(id) {
+      var projet = document.getElementById(id);
+      projet.classList.add("hidden");
+    }
+
+    // Fonction pour afficher une section
+    function showProjet(id) {
+      var projet = document.getElementById(id);
+      projet.classList.remove("hidden");
+    }
+
+  </script>
+
+</html>
