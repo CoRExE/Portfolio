@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   cursor: url(../assets/personal-cursor.cur), auto;
-  color: #777;
 }
 
 
@@ -35,6 +34,7 @@ nav ul li a:hover {
 
 section {
   padding: 40px 0;
+  color: #777;
 }
 
 #hero {
